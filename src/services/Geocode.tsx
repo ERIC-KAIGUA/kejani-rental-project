@@ -1,10 +1,10 @@
 export async function getCoordinatesFromAddress(address){
-    const apiKey = "AIzaSyDrWIlKnaNRr3b6Tpys2qsZI8gRYM4aBqQ";
+    const googleKey = import.meta.env.VITE_GOOGLE_MAPS_API_KEY as string
     const encodedAddress = encodeURIComponent(address);
 
 
     const response = await fetch(
-         `https://maps.googleapis.com/maps/api/geocode/json?address=${encodedAddress}&key=${apiKey}`
+         `https://maps.googleapis.com/maps/api/geocode/json?address=${encodedAddress}&key=${googleKey}`
   );
     
     const data = await response.json();

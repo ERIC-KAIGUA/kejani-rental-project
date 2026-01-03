@@ -96,11 +96,6 @@ const Searchpage = () => {
         return
       }
 
-      // if(!trimmedSelectedLocation || !trimmedMinPrice || !trimmedMaxPrice){
-      //       console.error("Fill in all the fields in order to search")
-      //       setFormError("Fill in all the fields in order to carry on the search")
-      //       return
-      // }
 
        try{
          let query = supabase
