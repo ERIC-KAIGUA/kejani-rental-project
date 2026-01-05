@@ -95,8 +95,6 @@ const Searchpage = () => {
         setFormError("Minimum Price must be smaller than the maximum price!");
         return
       }
-
-
        try{
          let query = supabase
          .from("property")
