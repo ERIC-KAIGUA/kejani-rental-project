@@ -3,7 +3,7 @@ import logo from '/src/assets/KEJANI_LOGO_3.0.png'
 import { SignedIn, SignedOut, SignInButton, UserButton } from '@clerk/clerk-react';
 import { FaAngleDown } from "react-icons/fa6";
 import Index from '../pages/Index'
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 
 
 const Header = () => {
@@ -45,8 +45,8 @@ const Header = () => {
            <button className='bg-main-dark active:bg-black transition duration-300 ease-in-out text-main-white p-3 px-5  border-none border rounded-3xl font-light font-quicksand shadow-md flex items-center justify-center gap-2' onMouseEnter={handlemouseEnter} onMouseLeave={handlemouseLeave}>About <FaAngleDown className=' bg-transparent' /></button>
                  {isOpen && (
                <div className='absolute bg-main-white border-main-grey border rounded-lg shadow-md w-28 p-2 ml-6 mt-2 z-10' onMouseEnter={handlemouseEnter} onMouseLeave={handlemouseLeave}>
-                    <a href='/LandlordAbout' className='block font-quicksand text-main-dark bg-main-white mb-2.5'>Landlords</a>
-                    <a href='/TenantAbout' className='block font-quicksand text-main-dark bg-main-white'>Tenants</a>
+                    <Link to='/LandlordAbout' className='block font-quicksand text-main-dark bg-main-white mb-2.5'>Landlords</Link>
+                    <Link to='/TenantAbout' className='block font-quicksand text-main-dark bg-main-white'>Tenants</Link>
                 </div>
       )}
         </div>
