@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 
 const SideBar = () => {
@@ -8,10 +9,10 @@ const SideBar = () => {
       
       <div className='mt-20 m-20'>
         <div className='flex flex-col gap-3'>
-              <a href='/Dashboard' className='font-quicksand font-semibold active:underline w-1/6'>Dashboard</a>
-              <a href='/Enquiries' className='font-quicksand font-semibold active:underline'>Your Enquiries</a>
-              <a href='/Favourites' className='font-quicksand font-semibold active:underline  w-1/6'>Favourites</a>
-              <a href='/PremiumTenant' className='font-quicksand font-semibold active:underline w-1/6'>Premium Tenant</a>
+              <Link to='/Dashboard' className='font-quicksand font-semibold active:underline w-1/6'>Dashboard</Link>
+              <Link to='/Enquiries' className='font-quicksand font-semibold active:underline'>Your Enquiries</Link>
+              <Link to='/Favourites' className='font-quicksand font-semibold active:underline  w-1/6'>Favourites</Link>
+              <Link to='/PremiumTenant' className='font-quicksand font-semibold active:underline w-1/6'>Premium Tenant</Link>
          </div>
       </div>
     </div>
